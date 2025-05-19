@@ -2,131 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Our travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="font awesome/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    
-<!-- header section starts  -->
-
-<header>
-
-    <h1 class="heading">contact us</h1>
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="home.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="service.html">service</a></li>
-            <li><a href="plan.html">plan</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact">
-
-    <form action="">
-
-        <input type="text" class="box" placeholder="name">
-        <input type="email" class="box" placeholder="your email">
-        <input type="password" class="box" placeholder="your password">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-    
-        <input type="submit" class="btn" value="send message">
-    
-    </form>
-    
-    <div class="content">
-    
-        <h3>contact us for latest updates</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia excepturi hic doloremque laboriosam. Fugiat adipisci provident ullam magni quia?</p>
+    <section class="sub-header">
+        
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="place.html">PLACE</a></li>
+                    <li><a href="blog.html">OFFERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+     <!-- ---Javascript for Toggle Menu--- -->
+     <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0683642995364!2d78.41874736464533!3d17.360443088094726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96492f625115%3A0x55f62dfc36793e54!2sGandhinagar%20Colony%2C%20Hyderabad%2C%20Telangana%20500030!5e0!3m2!1sen!2sin!4v1653970294248!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Hyderabad, Telangana, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>noreply@abcefg.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Enter place to be visited" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!----Footer---->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are available 24x7 for the better experience of our customers</p>
         <div class="icons">
-            <i class="fas fa-map-marker-alt"></i> mumbai, india 400104.
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
         </div>
-        <div class="icons">
-            <i class="fas fa-globe"></i> www.yourwebsite.com
-        </div>
-        <div class="icons">
-            <i class="fas fa-phone"></i> +123-456-7890
-        </div>
-    
-    </div>
-
-</section>
-
-<!-- contact section ends -->
-
-<div class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>why choose us?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illum voluptatum. Unde, consequuntur at. Molestias culpa suscipit explicabo possimus iusto?</p>
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">service</a>
-            <a href="#">plan</a>
-            <a href="#">contact</a>
-        </div>
-
-        <div class="box">
-            <h3>newsletter</h3>
-            <p>subscribe us for latest updates</p>
-            <form action="">
-                <input type="email" placeholder="your email">
-                <input type="submit" class="btn" value="subscribe">
-            </form>
-        </div>
-
-    </div>
-
-    <h1 class="credit"> created by <a href="#">mr. web designer</a> | all rights reserved. </h1>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
+        <p>Made with <i class="fa-solid fa-heart"></i> by Travel Advento</p>
+    </section>
 </body>
 </html>

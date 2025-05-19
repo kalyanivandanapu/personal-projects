@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="font awesome/css/all.min.css" rel="stylesheet">   
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="place.html">PLACE</a></li>
+                    <li><a href="blog.html">OFFERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>     
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Explore your dream city</h1>
+            <p> To travel from one place to another is a refreshing experience.We are here to provide you with the awesome and
+                travel experience. So what are you waiting for!!Check out the exciting places and offers that we provide.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+        <!-- ---Javascript for Toggle Menu--- -->
+       
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+     
+    <!-- -----PLACE----- -->
+    <section class="place">
+        <h1>Explorable places</h1>
+        <p>Here are some of the suggestions just for you.</p>
+        <div class="row">
+            <div class="place-col">
+                <h3>Chennai</h3>
+                <img src="images/chennai.png">
+                <p>Chennai is the place where mini India can be <br>felt with various cultures mix where the<br>great Temples are 
+                    built,<br>famous Bharathanattiyam Dance is practised</p>
+                        <a href="" class="hero-btn1" >Nearby hotels</a>
+                    
+            </div>
+            <div class="place-col">
+                <h3>Banglore</h3>
+                <img src="images/Banglore.png">
+                <p>more famous as a hub for the Information Technology sector, but it is also a gem of a tourist destination</p>
+                    <a href="" class="hero-btn1">Nearby hotels</a>
+            </div>
+            <div class="place-col">
+                <h3>Mumbai</h3>
+                <img src="images/Mumbai.png">
+                <p>vibrant and cosmopolitan city, an excellent<br>destination for visitors to get an authentic<br>insight into 
+                    the Indian way of life</p>
+                        <a href="" class="hero-btn1">Nearby hotels</a>
+            </div>
+        </div>
+    </section> 
+    <!-----TESTIMONIALS------->
+    <section class="testimonials">
+        <h1>Here are our reviews</h1>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/user1.jpg">
+                    <div>
+                        <p>Thank you very much for your guidance throughout<br>the trip we had a wonderful experience</p>
+                        <h3>XYZ</h3>    
+                        <i class="fa fa-star"></i>       
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa-regular fa-star-half-stroke"></i>                
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/user2.jpg">
+                    <div>
+                        <p>All accomodations over the trip were good.</p>
+                        <h3>ABC</h3> 
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa fa-star"></i>    
+                        <i class="fa-regular fa-star"></i>                         
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-----Call To Action------>
+    <section class="cta">
+        <h1>Contact Us For More Info</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+    <!----Footer---->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are available 24x7 for the better experience of our<br>customers</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Travel Advento</p>
+    </section>
+</body>
+</html>
